@@ -21,7 +21,7 @@ class User
   end
 
   def add_recipe_card(recipe,date,rating)
-    RecipeCard.new(self,recipe,data,rating)
+    RecipeCard.new(user: self,recipe: recipe,date: date,rating: rating)
   end
 
   def declare_allergen(ingredient)
